@@ -1,0 +1,8 @@
+= simple_form_for(@user) do |f|
+  = f.error_notification
+  
+  = f.input :name
+  = f.input :email
+
+  .actions
+    = f.submit 'Submit', :class => 'btn btn-primary pull-right'

@@ -1,0 +1,232 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+
+/* global settings */
+
+/*  body and html font base sizes  */
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}    
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-text-size-adjust:100%;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #000;
+  background-color: #fff;  
+}
+
+/*  Text Color  */
+h1 a, h2 a, h3 a, h5 a, h4 a { color: inherit }
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, .slide-to-top .trigger:hover { color: #485966  }
+
+/*  Font Selection  */
+/*body, input, textarea, button { font-family: 'Source Sans Pro', sans-serif;}*/
+.hero-unit h1,.hero-unit h2, .short_heading, .call-to-action h3, h1, h2, h3, h4, h5, h6 {font-family: 'Titillium Web', sans-serif;}
+.short_heading, .call-to-action h3, h2, h3, h4, h5, h6 {font-weight:500}
+
+hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 0;
+  border-top: 1px solid #5696ba;
+}
+
+.center {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* navigation */
+.navbar-inverse {
+  background-color: transparent;
+  border: none; 
+}
+
+.navbar-inverse .navbar-brand {
+  color: #61c2f5;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #428BCA;
+}
+
+.navbar-brand {
+  height: 55px;
+  padding: 5px;
+}
+
+a.list-group-item.active, 
+a.list-group-item.active:hover, 
+a.list-group-item.active:focus {
+  z-index: 2;
+  color: #fff;
+  background-color: #f58723;
+  border-color: #f58723;
+}
+
+/* main content */
+.page-content {
+  padding-bottom: 15px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+  
+}
+
+.jumbotron {
+  padding: 20px;
+  margin-bottom: 20px;
+  color: inherit;
+  background-color: #5696ba;
+}
+
+.image_responsive {
+  max-width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+/* Login social buttons */
+
+.omb_login .omb_authTitle {
+    text-align: center;
+  line-height: 300%;
+}
+  
+.omb_login .omb_socialButtons a {
+  color: white; // In yourUse @body-bg 
+  opacity:0.9;
+}
+.omb_login .omb_socialButtons a:hover {
+  color: white;
+  opacity:1;      
+}
+.omb_login .omb_socialButtons .omb_btn-facebook {background: #3b5998;}
+.omb_login .omb_socialButtons .omb_btn-twitter {background: #00aced;}
+.omb_login .omb_socialButtons .omb_btn-google {background: #c32f10;}
+
+.omb_login .omb_loginForm .input-group.i {
+  width: 2em;
+}
+
+
+/* footer */
+footer {
+  border-top: 1px dashed #5696ba;
+  margin: 40px 0px;
+  padding: 20px 0px;
+}
+
+
+/*
+ * Media settings for different screen size
+ * --------------------------------------------------
+ */
+
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+       -moz-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+  
+  #sidebar {
+    margin-right: 25px;
+    width: 47%;
+  }
+  
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+  
+  .visible-xs {
+    margin-right: 15px;
+    margin-top: 15px;
+  }
+
+  .navbar-inverse .navbar-toggle {
+    background-color: #303030;
+    margin-top: 15px;
+  }
+
+  .navbar-inverse .navbar-nav  {
+    background-color: #303030;
+    color: #ffffff;
+  }
+
+  .navbar-inverse .navbar-nav > li > a {
+    background-color: #303030;
+    color: #ffffff;
+  }
+
+  .navbar-inverse .navbar-nav > li > a:hover {
+    background-color: #303030;
+  }
+
+  .top-header p {
+    font-size: 14px;
+  }
+
+  .omb_login {
+    padding: 15px;
+  }
+
+  footer > .container p {
+    margin-left: 15px;
+  }
+    
+}
+
+@media (min-width: 768px) {
+  .omb_row-sm-offset-3 div:first-child[class*="col-"] {
+    margin-left: 25%;
+  }  
+}
